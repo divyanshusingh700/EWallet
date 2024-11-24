@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Notification-Service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wallet-Service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/CreditCardProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/IPaymentProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/IStockManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/InvoiceGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/OrderProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/PaymentProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/PaypalProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/ECommerceOrderManagementSystem/src/main/java/com/truecodes/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/LibraryManagement/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/LibraryManagement/src/main/java/com/truecodes/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/LibraryManagement/src/main/java/com/truecodes/Borrowable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/LibraryManagement/src/main/java/com/truecodes/Librarian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/LibraryManagement/src/main/java/com/truecodes/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/LibraryManagement/src/main/java/com/truecodes/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPs Assignment/LibraryManagement/src/main/java/com/truecodes/Person.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2pFFsIpqeXpFW1IIE8mI2WW5B9B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.UserServiceApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet",
+    "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/Notification-Service" />
+      <recent name="$PROJECT_DIR$/Wallet-Service" />
+      <recent name="$PROJECT_DIR$/User-Service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.truecodes.utilities" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.truecodes.UserServiceApplication.UserServiceApplication" />
+      <module name="User-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.truecodes.UserServiceApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="" />
+      <created>1732354122638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732354122638</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Notification-Service/src/main/java/com/truecodes/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/utils/src/main/java/com/truecodes/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
