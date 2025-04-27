@@ -20,11 +20,14 @@ public class SecurityConfig {
     @Autowired
     private CommonConfig commonConfig;
 
-    @Value("${user.authority}")
+    @Value("${user.Authority}")
     private String userAuthority;
 
-    @Value("${admin.authority}")
+    @Value("${admin.Authority}")
     private String adminAuthority;
+
+    @Value("${service.Authority}")
+    private String serviceAuthority;
 
     @Bean
     public AuthenticationProvider authenticationProvider() {
@@ -38,16 +41,16 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/user/addUpdate/**").permitAll()
-//                        .requestMatchers("/user/addAdmin/**").permitAll()
-//                        .requestMatchers("/user/filter/**").hasAnyAuthority(adminAuthority, studentAuthority)
+//                                .requestMatchers("/user/userDetails/**").hasAnyAuthority(serviceAuthority, adminAuthority)
+                                .requestMatchers("/user/userDetails/**").permitAll()
+                                .requestMatchers("/user/addUpdate/**").permitAll()
+//                                .requestMatchers("/user/filter/**").hasAnyAuthority(adminAuthority, studentAuthority)
 //                        .requestMatchers("/txn/create/**").hasAuthority(adminAuthority)
 //                        .requestMatchers("/txn/return/**").hasAuthority(adminAuthority)
 //                        .requestMatchers("/book/addBook/**").hasAuthority(adminAuthority)
 //                        .requestMatchers("/book/filter/**").hasAnyAuthority(studentAuthority, adminAuthority)
-                        .anyRequest().permitAll()
+                                .anyRequest().permitAll()
                 ).formLogin(withDefaults()).httpBasic(withDefaults()).csrf(csrf -> csrf.disable());
         return http.build();
     }
-
 }

@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="" />
+    <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Notification-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification-Service/src/main/java/com/truecodes/NotificationServiceApplication/NotificationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notification-Service/src/main/java/com/truecodes/NotificationServiceApplication/NotificationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification-Service/src/main/java/com/truecodes/NotificationServiceApplication/consumer/UserCreatedConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notification-Service/src/main/java/com/truecodes/NotificationServiceApplication/consumer/UserCreatedConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Notification-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification-Service/src/test/java/com/truecodes/EWallet/EWalletApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/CommonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/configuration/CommonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/configuration/CommonConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/configuration/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/configuration/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO$UserRequestDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO$UserRequestDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/UserIdentifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users$UsersBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users$UsersBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/test/java/com/truecodes/EWallet/EWalletApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/CommonConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,17 +70,31 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.NotificationServiceApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Run",
+    "Application.WalletServiceApplication.executor": "Run",
+    "Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication.executor": "Debug",
+    "Application.org.gfg.NotificationServiceApplication.NotificationServiceApplication.executor": "Run",
+    "Application.org.gfg.WalletServiceApplication.WalletServiceApplication.executor": "Run",
+    "Maven.EWallet [clean].executor": "Run",
+    "Maven.EWallet [compile].executor": "Run",
+    "Maven.EWallet [install].executor": "Run",
+    "Maven.EWallet [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet",
+    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet",
     "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/Notification-Service" />
       <recent name="$PROJECT_DIR$/Wallet-Service" />
@@ -59,7 +104,20 @@
       <recent name="com.truecodes.utilities" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.UserServiceApplication">
+    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.truecodes.NotificationServiceApplication.NotificationServiceApplication" />
+      <module name="Notification-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.truecodes.NotificationServiceApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.truecodes.UserServiceApplication.UserServiceApplication" />
       <module name="User-Service" />
@@ -73,9 +131,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WalletServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.truecodes.WalletServiceApplication.WalletServiceApplication" />
+      <module name="Wallet-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.truecodes.WalletServiceApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.truecodes.NotificationServiceApplication.NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.truecodes.NotificationServiceApplication.NotificationServiceApplication" />
+      <module name="Notification-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.truecodes.NotificationServiceApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
+        <item itemvalue="Application.WalletServiceApplication" />
+        <item itemvalue="Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -7,13 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Notification-service" />
+        <module name="Wallet-Service" />
+        <module name="utils" />
+        <module name="User-Service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Notification-Service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="EWallet" options="" />
       <module name="Notification-Service" options="-parameters" />
+      <module name="Notification-service" options="-parameters" />
       <module name="User-Service" options="-parameters" />
       <module name="Wallet-Service" options="-parameters" />
       <module name="utils" options="-parameters" />

@@ -15,7 +15,7 @@ public class CommonConfig {
     }
 
     @Bean
-    private ObjectMapper objectMapper(){
+    public ObjectMapper objectMapper(){
         return new ObjectMapper();
     }
 }

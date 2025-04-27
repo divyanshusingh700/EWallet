@@ -1,5 +1,6 @@
 package com.truecodes.UserServiceApplication.dtos;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.truecodes.utilities.UserIdentifier;
 import com.truecodes.UserServiceApplication.model.UserType;
 import com.truecodes.UserServiceApplication.model.Users;

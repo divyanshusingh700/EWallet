@@ -27,10 +27,10 @@ public class UserService implements UserDetailsService {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private UserRepository userRepository;
-    @Value("${user.authority}")
+    @Value("${user.Authority}")
     private String userAuthority;
 
-    @Value("${admin.authority}")
+    @Value("${admin.Authority}")
     private String adminAuthority;
 
     @Autowired
@@ -66,6 +66,8 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return null;
+        Users users = userRepository.findByContact(username);
+        System.out.println("got the user Details" + users);
+        return users;
     }
 }
