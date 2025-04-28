@@ -30,6 +30,9 @@ public class Users implements UserDetails {
     @Column(unique = true, nullable = false)
     private String contact;
 
+    @Column(name = "user_id", nullable = false, unique = true)
+    private String userId;
+
     private UserType userType;
 
     @Column(unique = true,nullable = false)

@@ -1,4 +1,4 @@
-package org.gfg.JBDL_70_EWALLET;
+package com.truecodes.EWallet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

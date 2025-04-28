@@ -8,6 +8,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
+import java.util.UUID;
+
 @Getter
 @Setter
 //@RequiredArgsConstructor
@@ -44,6 +46,7 @@ public class UserRequestDTO {
                 .accountNonExpired(true)
                 .credentialsNonExpired(true)
                 .accountNonLocked(true)
+                .userId(UUID.randomUUID().toString())
                 .userType(UserType.USER)
                 .build();
     }

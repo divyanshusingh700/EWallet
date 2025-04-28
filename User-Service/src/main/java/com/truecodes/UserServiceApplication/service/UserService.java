@@ -54,7 +54,7 @@ public class UserService implements UserDetailsService {
         jsonObject.put(CommonConstants.USER_NAME,user.getName());
         jsonObject.put(CommonConstants.USER_IDENTIFIER,user.getIdentifier());
         jsonObject.put(CommonConstants.USER_IDENTIFIER_VALUE,user.getUserIdentifierValue());
-        jsonObject.put(CommonConstants.USER_ID,user.getPk());
+        jsonObject.put(CommonConstants.USER_ID,user.getUserId());
 
         logger.info("json object as to string"+jsonObject);
         logger.info("json object as to string by objectMapper.writeValueAsString(jsonObject)"+objectMapper.writeValueAsString(jsonObject));
