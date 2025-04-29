@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Wallet-Service/src/test/java/com/truecodes/EWallet/Jbdl70EwalletApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notification-Service/src/test/java/org/gfg/JBDL_70_EWALLET/Jbdl70EwalletApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO$UserRequestDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO$UserRequestDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users$UsersBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users$UsersBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/test/java/org/gfg/JBDL_70_EWALLET/Jbdl70EwalletApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notification-Service/src/test/java/com/truecodes/EWallet/Jbdl70EwalletApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/model/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/Wallet$WalletBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/Wallet$WalletBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/Wallet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/Wallet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
   "keyToString": {
     "Application.NotificationServiceApplication.executor": "Debug",
     "Application.UserServiceApplication.executor": "Debug",
-    "Application.WalletServiceApplication.executor": "Run",
+    "Application.WalletServiceApplication.executor": "Debug",
     "Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication.executor": "Debug",
     "Application.org.gfg.NotificationServiceApplication.NotificationServiceApplication.executor": "Run",
     "Application.org.gfg.WalletServiceApplication.WalletServiceApplication.executor": "Run",
@@ -68,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet",
+    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication",
     "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -78,17 +72,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/Notification-Service" />
       <recent name="$PROJECT_DIR$/Wallet-Service" />
-      <recent name="$PROJECT_DIR$/User-Service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.truecodes.utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NotificationServiceApplication">
+  <component name="RunManager" selected="Application.WalletServiceApplication">
     <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.truecodes.NotificationServiceApplication.NotificationServiceApplication" />
       <module name="Notification-service" />
@@ -143,9 +137,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NotificationServiceApplication" />
-        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.WalletServiceApplication" />
+        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
         <item itemvalue="Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication" />
       </list>
     </recent_temporary>
@@ -190,89 +184,64 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/controller/WalletController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
           <line>44</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
           <line>47</line>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="17" />
+          <line>35</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="18" />
+          <line>37</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

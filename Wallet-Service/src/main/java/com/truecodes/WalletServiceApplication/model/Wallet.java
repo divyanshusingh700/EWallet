@@ -20,7 +20,7 @@ import java.util.Date;
 @Builder
 public class Wallet {
 
-    private Integer userId;
+    private String userId;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

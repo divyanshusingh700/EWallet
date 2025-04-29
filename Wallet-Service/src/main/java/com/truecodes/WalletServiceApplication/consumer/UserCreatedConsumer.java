@@ -34,7 +34,7 @@ public class UserCreatedConsumer {
     @KafkaListener(topics = CommonConstants.USER_CREATED_TOPIC, groupId = "wallet-group")
     public void createWallet(String msg) throws JsonProcessingException {
         JSONObject jsonObject = objectMapper.readValue(msg, JSONObject.class);
-        Integer userId = (Integer) jsonObject.get(CommonConstants.USER_ID);
+        String userId = (String) jsonObject.get(CommonConstants.USER_ID);
          String contact = (String) jsonObject.get(CommonConstants.USER_CONTACT);
 
         Wallet wallet = Wallet.builder().
