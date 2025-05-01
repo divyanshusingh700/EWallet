@@ -20,7 +20,11 @@ public class WalletController {
     @PostMapping("/transfer")
     public ResponseEntity<String> transferAmount(@RequestBody TransferRequestDto transferRequestDto) {
         logger.info("are we getting here");
-        String result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount());
-        return ResponseEntity.ok(result);
+//        try {
+            String result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount());
+            return ResponseEntity.ok(result);
+//        } catch (CustomBadRequestException e) {
+//            throw e;
+//        }
     }
 }

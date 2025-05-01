@@ -1,11 +1,13 @@
 package com.truecodes.WalletServiceApplication.service;
 
+import com.truecodes.WalletServiceApplication.exceptionHandler.ClientSideAPIRequestException;
 import com.truecodes.WalletServiceApplication.model.TransactionHistory;
 import com.truecodes.WalletServiceApplication.model.Wallet;
 import com.truecodes.WalletServiceApplication.repository.TxnHistoryRepository;
 import com.truecodes.WalletServiceApplication.repository.WalletRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -27,7 +29,7 @@ public class WalletService {
         Wallet receiverWallet = walletRepository.findByContact(receiverContact);
 
         if (senderWallet.getBalance() < amount) {
-            throw new RuntimeException("Insufficient balance");
+            throw new ClientSideAPIRequestException("Insufficient balance to make transfer", HttpStatus.CONFLICT);
         }
 
         senderWallet.setBalance(senderWallet.getBalance() - amount);
