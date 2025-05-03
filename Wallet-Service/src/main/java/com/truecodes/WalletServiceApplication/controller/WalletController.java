@@ -1,6 +1,7 @@
 package com.truecodes.WalletServiceApplication.controller;
 
 import com.truecodes.WalletServiceApplication.dtos.TransferRequestDto;
+import com.truecodes.WalletServiceApplication.model.CurrencyType;
 import com.truecodes.WalletServiceApplication.service.WalletService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +22,7 @@ public class WalletController {
     public ResponseEntity<String> transferAmount(@RequestBody TransferRequestDto transferRequestDto) {
         logger.info("are we getting here");
 //        try {
-            String result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount());
+            String result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount(), CurrencyType.INR);
             return ResponseEntity.ok(result);
 //        } catch (CustomBadRequestException e) {
 //            throw e;

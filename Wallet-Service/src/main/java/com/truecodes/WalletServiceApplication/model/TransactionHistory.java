@@ -20,18 +20,32 @@ public class TransactionHistory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "sender_phone_number")
     private String senderContact;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "sender_wallet_number")
+    private String senderWalletNumber;
+
+    @Column(nullable = false, name = "receiver_wallet_number")
+    private String receiverWalletNumber;
+
+    @Column(nullable = false, name = "receiver_phone_number")
     private String receiverContact;
 
     @Column(nullable = false)
-    private Double amount;
+    private String senderName;
+
+    @Column(nullable = false)
+    private String receiverName;
+
+    @Column(nullable = false)
+    private Double amountTransferred;
 
     @Column(nullable = false)
     private LocalDateTime transactionTime;
 
     @Column(nullable = false)
     private String status; // SUCCESS, FAILED, etc.
+
+    private CurrencyType currencyType;
 }

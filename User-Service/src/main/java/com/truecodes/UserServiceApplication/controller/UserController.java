@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.truecodes.UserServiceApplication.dtos.UserRequestDTO;
 import com.truecodes.UserServiceApplication.model.Users;
 import com.truecodes.UserServiceApplication.service.UserService;
+import com.truecodes.utilities.dto.UserDTO;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,4 +37,11 @@ public class UserController {
         Users u = (Users) userService.loadUserByUsername(contact);
         return u;
     }
+
+    @GetMapping("/{userId}")
+    public ResponseEntity<UserDTO> getUserById(@PathVariable String userId) {
+        UserDTO user = userService.findUserById(userId);
+        return ResponseEntity.ok(user);
+    }
+
 }
