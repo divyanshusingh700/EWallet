@@ -1,6 +1,5 @@
 package com.truecodes.WalletServiceApplication.model;
 
-import com.truecodes.UserServiceApplication.model.Users;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;

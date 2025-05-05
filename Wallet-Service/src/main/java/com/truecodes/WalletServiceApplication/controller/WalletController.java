@@ -2,6 +2,7 @@ package com.truecodes.WalletServiceApplication.controller;
 
 import com.truecodes.WalletServiceApplication.dtos.TransferRequestDto;
 import com.truecodes.WalletServiceApplication.model.CurrencyType;
+import com.truecodes.WalletServiceApplication.model.TransferResponseDTO;
 import com.truecodes.WalletServiceApplication.service.WalletService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,13 +20,10 @@ public class WalletController {
     private static Logger logger = LoggerFactory.getLogger(WalletController.class);
 
     @PostMapping("/transfer")
-    public ResponseEntity<String> transferAmount(@RequestBody TransferRequestDto transferRequestDto) {
+    public ResponseEntity<TransferResponseDTO> transferAmount(@RequestBody TransferRequestDto transferRequestDto) {
         logger.info("are we getting here");
-//        try {
-            String result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount(), CurrencyType.INR);
-            return ResponseEntity.ok(result);
-//        } catch (CustomBadRequestException e) {
-//            throw e;
-//        }
+        TransferResponseDTO result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount(), CurrencyType.INR);
+        return ResponseEntity.ok(result);
+
     }
 }

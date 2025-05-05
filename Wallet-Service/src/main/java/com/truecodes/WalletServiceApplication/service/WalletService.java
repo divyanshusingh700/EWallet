@@ -3,6 +3,7 @@ package com.truecodes.WalletServiceApplication.service;
 import com.truecodes.WalletServiceApplication.exceptionHandler.ClientSideAPIRequestException;
 import com.truecodes.WalletServiceApplication.model.CurrencyType;
 import com.truecodes.WalletServiceApplication.model.TransactionHistory;
+import com.truecodes.WalletServiceApplication.model.TransferResponseDTO;
 import com.truecodes.WalletServiceApplication.model.Wallet;
 import com.truecodes.WalletServiceApplication.repository.TxnHistoryRepository;
 import com.truecodes.WalletServiceApplication.repository.WalletRepository;
@@ -27,7 +28,7 @@ public class WalletService {
     private UserClientService userClientService;
 
     @Transactional
-    public String transferAmount(String senderContact, String receiverContact, Double amount, CurrencyType currencyType) {
+    public TransferResponseDTO transferAmount(String senderContact, String receiverContact, Double amount, CurrencyType currencyType) {
 
         Wallet senderWallet = walletRepository.findByContact(senderContact);
 
@@ -61,6 +62,16 @@ public class WalletService {
 
         transactionHistoryRepository.save(transactionHistory);
 
-        return "Amount transferred successfully!";
+        return TransferResponseDTO.builder()
+                .senderName(sender.getName())
+                .receiverName(receiver.getName())
+                .senderWalletNumber(senderWallet.getWalletSerial())
+                .receiverWalletNumber(receiverWallet.getWalletSerial())
+                .amountTransferred(amount)
+                .currencyType(currencyType)
+                .status("PROCESSED")
+                .transactionTime(LocalDateTime.now().toString())
+                .message("Amount transferred successfully!")
+                .build();
     }
 }

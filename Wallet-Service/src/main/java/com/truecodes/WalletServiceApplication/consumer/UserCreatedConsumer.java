@@ -46,6 +46,8 @@ public class UserCreatedConsumer {
         Wallet wallet = Wallet.builder().
                 contact(contact).
                 userId(userId).
+                isBlocked(false).
+                active(true).
                 walletSerial(walletSerial).
                 currency(CurrencyType.INR).
                 totalAmount(balance).
