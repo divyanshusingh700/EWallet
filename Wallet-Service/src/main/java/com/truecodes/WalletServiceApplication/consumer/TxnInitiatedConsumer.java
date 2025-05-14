@@ -48,7 +48,7 @@ public class TxnInitiatedConsumer {
         }else if(receiverWallet == null){
             message = "receiver wallet is not associated with us";
             status = "failed";
-        }else if(amount > senderWallet.getBalance()){
+        }else if(amount > senderWallet.getTotalAmount()){
             message = "sender wallet amount  is less than the amount of txn he wants to make";
             status = "failed";
         }else{

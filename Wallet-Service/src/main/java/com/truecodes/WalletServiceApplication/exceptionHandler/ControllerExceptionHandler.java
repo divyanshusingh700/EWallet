@@ -23,10 +23,10 @@ public class ControllerExceptionHandler {
         ex.printStackTrace();
         Map<String, Object> errorBody = new HashMap<>();
         errorBody.put("timestamp", Instant.now().toEpochMilli());
-        errorBody.put("error", HttpStatus.BAD_REQUEST);
+        errorBody.put("error", ex.getStatus());
         errorBody.put("message", ex.getMessage());
         System.out.println("Error Body: " + errorBody);
-        return new ResponseEntity<>(errorBody, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(errorBody, ex.getStatus());
     }
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {

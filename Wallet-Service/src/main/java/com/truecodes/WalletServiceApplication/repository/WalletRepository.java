@@ -13,6 +13,6 @@ public interface WalletRepository extends JpaRepository<Wallet,Long> {
 
     @Transactional
     @Modifying
-    @Query("update Wallet w set w.balance = w.balance + :amount where w.contact= :contact")
+    @Query("update Wallet w set w.totalAmount = w.totalAmount + :amount where w.contact= :contact")
     void updateWallet(String contact, double amount);
 }
