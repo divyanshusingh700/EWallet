@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/controller/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/controller/WalletController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/model/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/repository/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/repository/WalletRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/controller/WalletController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/controller/WalletController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/service/WalletService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/service/WalletService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,8 +122,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WalletServiceApplication" />
-        <item itemvalue="Application.NotificationServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -170,11 +167,6 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/service/WalletService.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
           <line>53</line>
           <option name="timeStamp" value="30" />
@@ -193,11 +185,6 @@
           <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
           <line>40</line>
           <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/exceptionHandler/ClientSideAPIRequestException.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

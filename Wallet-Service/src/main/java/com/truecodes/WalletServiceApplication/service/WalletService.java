@@ -1,10 +1,7 @@
 package com.truecodes.WalletServiceApplication.service;
 
 import com.truecodes.WalletServiceApplication.exceptionHandler.ClientSideAPIRequestException;
-import com.truecodes.WalletServiceApplication.model.CurrencyType;
-import com.truecodes.WalletServiceApplication.model.TransactionHistory;
-import com.truecodes.WalletServiceApplication.model.TransferResponseDTO;
-import com.truecodes.WalletServiceApplication.model.Wallet;
+import com.truecodes.WalletServiceApplication.model.*;
 import com.truecodes.WalletServiceApplication.repository.TxnHistoryRepository;
 import com.truecodes.WalletServiceApplication.repository.WalletRepository;
 import com.truecodes.utilities.dto.UserDTO;
@@ -72,6 +69,21 @@ public class WalletService {
                 .status("PROCESSED")
                 .transactionTime(LocalDateTime.now().toString())
                 .message("Amount transferred successfully!")
+                .build();
+    }
+    public WalletDetailsRespDTO viewWalletDetails(String contact, CurrencyType currencyType) {
+        Wallet wallet = walletRepository.findByContact(contact);
+        UserDTO user = userClientService.getUserNameById(wallet.getUserId());
+        String status = "";
+        if(wallet.isActive()){
+            status+="active";
+        }
+        return WalletDetailsRespDTO.builder()
+                .totalAmount(wallet.getTotalAmount())
+                .name(user.getName())
+                .walletNumber(wallet.getWalletSerial())
+                .currencyType(currencyType)
+                .status(status)
                 .build();
     }
 }
