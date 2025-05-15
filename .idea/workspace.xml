@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="" />
+    <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/controller/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/controller/WalletController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/controller/WalletController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/controller/WalletController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,30 +43,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.NotificationServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.UserServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.WalletServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.org.gfg.NotificationServiceApplication.NotificationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.org.gfg.WalletServiceApplication.WalletServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.EWallet [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.EWallet [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.EWallet [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.EWallet [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;UpdateDBColumns&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.NotificationServiceApplication.executor": "Debug",
+    "Application.UserServiceApplication.executor": "Debug",
+    "Application.WalletServiceApplication.executor": "Debug",
+    "Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication.executor": "Debug",
+    "Application.org.gfg.NotificationServiceApplication.NotificationServiceApplication.executor": "Run",
+    "Application.org.gfg.WalletServiceApplication.WalletServiceApplication.executor": "Run",
+    "Maven.EWallet [clean].executor": "Run",
+    "Maven.EWallet [compile].executor": "Run",
+    "Maven.EWallet [install].executor": "Run",
+    "Maven.EWallet [verify].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "walletView",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication",
+    "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication" />
@@ -73,7 +79,7 @@
       <recent name="com.truecodes.utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WalletServiceApplication">
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.truecodes.NotificationServiceApplication.NotificationServiceApplication" />
       <module name="Notification-service" />
@@ -115,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WalletServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.WalletServiceApplication" />
         <item itemvalue="Application.NotificationServiceApplication" />
       </list>
     </recent_temporary>
@@ -159,26 +165,6 @@
           <url>file://$PROJECT_DIR$/utils/src/main/java/com/truecodes/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

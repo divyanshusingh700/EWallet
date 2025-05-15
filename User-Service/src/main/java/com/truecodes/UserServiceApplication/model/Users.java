@@ -2,6 +2,7 @@ package com.truecodes.UserServiceApplication.model;
 
 import com.truecodes.utilities.UserIdentifier;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
