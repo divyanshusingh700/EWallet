@@ -66,6 +66,7 @@ public class Users implements UserDetails {
     @Enumerated
     private UserIdentifier identifier;
 
+    @Column(name = "user_identifier_value", unique = true,nullable = false)
     private String userIdentifierValue;
 
     @Override
