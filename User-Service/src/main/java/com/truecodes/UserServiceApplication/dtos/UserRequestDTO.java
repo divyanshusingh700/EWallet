@@ -21,6 +21,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserRequestDTO {
+    @JsonDeserialize(using = StrictStringDeserializer.class)
+    @NotBlank(message = "Name can not be blank")
     private String name;
     @NotBlank(message = "contact can not be blank")
     private String contact;
