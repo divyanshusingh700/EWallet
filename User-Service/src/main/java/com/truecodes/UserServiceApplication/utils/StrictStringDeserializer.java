@@ -15,6 +15,7 @@ public class StrictStringDeserializer extends JsonDeserializer<String> {
         JsonToken token = parser.getCurrentToken();
 
         if (token == JsonToken.VALUE_STRING) {
+
             return parser.getText();
         }
 
