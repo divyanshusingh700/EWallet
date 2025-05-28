@@ -67,6 +67,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     public String getHeader(String name) {
                         if ("X-User-Email".equals(name)) return username;
                         return super.getHeader(name);
+
                     }
                 };
 
