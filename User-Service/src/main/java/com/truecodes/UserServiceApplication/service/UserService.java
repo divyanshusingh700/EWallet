@@ -42,6 +42,7 @@ public class UserService implements UserDetailsService {
     public Users addUpdate(@Valid UserRequestDTO dto) throws JsonProcessingException {
         // check if user is present in db
 
+
         Users user = dto.toUser();
         user.setAuthorities(userAuthority);
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
