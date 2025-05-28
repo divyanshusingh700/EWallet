@@ -4,8 +4,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.truecodes.UserServiceApplication.dtos.UserRequestDTO;
 import com.truecodes.UserServiceApplication.model.Users;
-import com.truecodes.UserServiceApplication.repositoriy.UserRepository;
+import com.truecodes.UserServiceApplication.repository.UserRepository;
 import com.truecodes.utilities.CommonConstants;
+import com.truecodes.utilities.dto.UserDTO;
 import jakarta.validation.Valid;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
@@ -41,8 +42,7 @@ public class UserService implements UserDetailsService {
 
     public Users addUpdate(@Valid UserRequestDTO dto) throws JsonProcessingException {
         // check if user is present in db
-
-
+        logger.info("we came here in add update service class method");
         Users user = dto.toUser();
         user.setAuthorities(userAuthority);
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
@@ -71,4 +71,16 @@ public class UserService implements UserDetailsService {
         System.out.println("got the user Details" + users);
         return users;
     }
+
+    public UserDTO findUserById(String userId) {
+        Users user = userRepository.findByUserId(userId)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        return UserDTO.builder()
+                .id(user.getUserId())
+                .name(user.getName())
+                .email(user.getEmail())
+                .build();
+    }
+
 }

@@ -2,6 +2,7 @@ package com.truecodes.UserServiceApplication.model;
 
 import com.truecodes.utilities.UserIdentifier;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -65,6 +66,7 @@ public class Users implements UserDetails {
     @Enumerated
     private UserIdentifier identifier;
 
+    @Column(name = "user_identifier_value", unique = true,nullable = false)
     private String userIdentifierValue;
 
     @Override
@@ -74,12 +76,12 @@ public class Users implements UserDetails {
 
     @Override
     public String getPassword() {
-        return "";
+        return this.password;
     }
 
     @Override
     public String getUsername() {
-        return "";
+        return this.getContact();
     }
 
     @Override

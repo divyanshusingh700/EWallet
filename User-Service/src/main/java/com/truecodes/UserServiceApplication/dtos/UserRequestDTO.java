@@ -1,11 +1,14 @@
 package com.truecodes.UserServiceApplication.dtos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.truecodes.UserServiceApplication.utils.StrictStringDeserializer;
 import com.truecodes.utilities.UserIdentifier;
 import com.truecodes.UserServiceApplication.model.UserType;
 import com.truecodes.UserServiceApplication.model.Users;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 import java.util.UUID;
@@ -18,6 +21,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserRequestDTO {
+    @JsonDeserialize(using = StrictStringDeserializer.class)
+    @NotBlank(message = "Name can not be blank")
     private String name;
     @NotBlank(message = "contact can not be blank")
     private String contact;
@@ -25,6 +30,9 @@ public class UserRequestDTO {
     private String email;
     private String address;
     private String dob;
+
+    @JsonDeserialize(using = StrictStringDeserializer.class)
+    @Size(min = 8, message = "Password must be at least 8 characters long")
     @NotBlank(message = "password can not be blank")
     private String password;
 

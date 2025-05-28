@@ -1,0 +1,34 @@
+server:
+  port: 8090
+
+spring:
+  security:
+    user:
+      name: disabled
+      password: disabled
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: User-Service
+            uri: http://localhost:8080
+            predicates:
+              - Path=/user/**
+              - Method=GET,POST,PUT,DELETE,PATCH
+            filters:
+              - StripPrefix=1
+          - id: Wallet-Service
+            uri: http://localhost:7072
+            predicates:
+              - Path=/wallet/**
+              - Method=GET,POST,PUT,DELETE,PATCH
+            filters:
+              - StripPrefix=1
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: DEBUG
+    com.truecodes.gateway.JwtAuthenticationFilter: DEBUG

@@ -2,6 +2,7 @@ package com.truecodes.WalletServiceApplication.consumer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.truecodes.WalletServiceApplication.model.CurrencyType;
 import com.truecodes.utilities.CommonConstants;
 import com.truecodes.WalletServiceApplication.model.Wallet;
 import com.truecodes.WalletServiceApplication.repository.WalletRepository;
@@ -13,6 +14,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+
+import java.util.Random;
 
 @Service
 public class UserCreatedConsumer {
@@ -35,14 +38,23 @@ public class UserCreatedConsumer {
     public void createWallet(String msg) throws JsonProcessingException {
         JSONObject jsonObject = objectMapper.readValue(msg, JSONObject.class);
         String userId = (String) jsonObject.get(CommonConstants.USER_ID);
-         String contact = (String) jsonObject.get(CommonConstants.USER_CONTACT);
+        String contact = (String) jsonObject.get(CommonConstants.USER_CONTACT);
+
+        long randomNumber = Math.abs(new Random().nextLong() % 1_000_000_000_000L);
+        String walletSerial = String.format("%012d", randomNumber);
 
         Wallet wallet = Wallet.builder().
                 contact(contact).
                 userId(userId).
-                balance(balance).
+                isBlocked(false).
+                active(true).
+                walletSerial(walletSerial).
+                currency(CurrencyType.INR).
+                totalAmount(balance).
                 build();
+
         walletRepository.save(wallet);
+
         logger.info("wallet has been created for the user");
         JSONObject object = new JSONObject();
         object.put(CommonConstants.USER_ID, userId);
