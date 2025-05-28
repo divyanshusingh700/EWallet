@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-gateway" />
         <module name="Notification-service" />
         <module name="Wallet-Service" />
         <module name="utils" />
@@ -24,6 +25,7 @@
       <module name="Notification-service" options="-parameters" />
       <module name="User-Service" options="-parameters" />
       <module name="Wallet-Service" options="-parameters" />
+      <module name="spring-cloud-gateway" options="-parameters" />
       <module name="utils" options="-parameters" />
     </option>
   </component>
