@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Notification-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/CommonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/filters/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/jwt/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/otp/OtpService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +51,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -42,7 +65,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.NotificationServiceApplication.executor": "Debug",
+    "Application.GatewayApplication.executor": "Debug",
+    "Application.JwtKeyGenerator.executor": "Run",
+    "Application.NotificationServiceApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Debug",
     "Application.WalletServiceApplication.executor": "Debug",
     "Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication.executor": "Debug",
@@ -54,9 +79,9 @@
     "Maven.EWallet [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "minor1",
+    "git-widget-placeholder": "archiLogin",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet/utils/src/main/java/com/truecodes/utilities/auth",
+    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet",
     "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -66,17 +91,43 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model" />
       <recent name="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth" />
       <recent name="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$/Notification-Service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.truecodes.utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
+  <component name="RunManager" selected="Application.GatewayApplication">
+    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.truecodes.gateway.GatewayApplication" />
+      <module name="spring-cloud-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.truecodes.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtKeyGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.truecodes.utilities.auth.JwtKeyGenerator" />
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.truecodes.utilities.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.truecodes.NotificationServiceApplication.NotificationServiceApplication" />
       <module name="Notification-service" />
@@ -118,8 +169,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.WalletServiceApplication" />
+        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.JwtKeyGenerator" />
         <item itemvalue="Application.NotificationServiceApplication" />
       </list>
     </recent_temporary>
@@ -162,6 +215,88 @@
           <url>file://$PROJECT_DIR$/utils/src/main/java/com/truecodes/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>67</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/controller/WalletController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/controller/WalletController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
+          <line>66</line>
+          <properties method="getHeader">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
