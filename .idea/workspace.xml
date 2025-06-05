@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notification-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Notification-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/UserServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/CommonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/filters/JwtRequestFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/jwt/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/otp/OtpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/WalletServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication/WalletServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/JwtUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "divyanshus7"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/divyanshusingh700/EWallet.git",
+    "accountId": "f4528a10-41d2-44fd-9528-a4acb6e35091"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -68,7 +64,7 @@
     "Application.GatewayApplication.executor": "Debug",
     "Application.JwtKeyGenerator.executor": "Run",
     "Application.NotificationServiceApplication.executor": "Run",
-    "Application.UserServiceApplication.executor": "Debug",
+    "Application.UserServiceApplication.executor": "Run",
     "Application.WalletServiceApplication.executor": "Debug",
     "Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication.executor": "Debug",
     "Application.org.gfg.NotificationServiceApplication.NotificationServiceApplication.executor": "Run",
@@ -79,9 +75,9 @@
     "Maven.EWallet [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "archiLogin",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet",
+    "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet/User-Service/src/main/java/com/truecodes/UserServiceApplication",
     "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -91,17 +87,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model" />
       <recent name="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth" />
       <recent name="$PROJECT_DIR$/Wallet-Service/src/main/java/com/truecodes/WalletServiceApplication" />
-      <recent name="$PROJECT_DIR$/utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.truecodes.UserServiceApplication.controller" />
+      <recent name="com.truecodes.UserServiceApplication.service" />
+      <recent name="com.truecodes.UserServiceApplication.configuration" />
       <recent name="com.truecodes.utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayApplication">
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.truecodes.gateway.GatewayApplication" />
       <module name="spring-cloud-gateway" />
@@ -169,9 +168,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.WalletServiceApplication" />
-        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.JwtKeyGenerator" />
         <item itemvalue="Application.NotificationServiceApplication" />
       </list>
