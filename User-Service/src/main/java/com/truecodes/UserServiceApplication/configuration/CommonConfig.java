@@ -16,11 +16,6 @@ public class CommonConfig {
     }
 
     @Bean
-    public JwtUtil jwtUtil() {
-        return new JwtUtil();
-    }
-
-    @Bean
     public ObjectMapper objectMapper(){
         return new ObjectMapper();
     }
