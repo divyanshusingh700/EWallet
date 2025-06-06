@@ -1,4 +1,4 @@
-package com.truecodes.UserServiceApplication.interceptor;
+package com.truecodes.utilities.interceptor;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

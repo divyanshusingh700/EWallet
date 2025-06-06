@@ -1,4 +1,4 @@
-package com.truecodes.UserServiceApplication.configuration;
+package com.truecodes.WalletServiceApplication.config;
 
 import com.truecodes.utilities.interceptor.JwtInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jwtInterceptor)
-                .addPathPatterns("/user/**", "/wallet/**");
+                .addPathPatterns("/wallet/**");
     }
 }
