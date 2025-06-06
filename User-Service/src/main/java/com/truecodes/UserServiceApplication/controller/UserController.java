@@ -76,5 +76,4 @@ public class UserController {
         UserDTO user = userService.findUserById(userId);
         return ResponseEntity.ok(user);
     }
-
 }
