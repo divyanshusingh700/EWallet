@@ -20,6 +20,6 @@ public class TransferRequestDto {
     private String senderContact;
     @NotBlank(message = "receiverContact can not be blank")
     private String receiverContact;
-    @NotBlank(message = "amount can not be blank")
+    @NotNull(message = "Amount is required")
     private Double amount;
 }
