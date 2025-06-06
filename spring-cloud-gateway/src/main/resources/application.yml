@@ -13,19 +13,13 @@ spring:
       mvc:
         routes:
           - id: User-Service
-            uri: http://localhost:8080
+            uri: http://localhost:8089
             predicates:
               - Path=/user/**
               - Method=GET,POST,PUT,DELETE,PATCH
             filters:
               - StripPrefix=1
-          - id: Wallet-Service
-            uri: http://localhost:7072
-            predicates:
-              - Path=/wallet/**
-              - Method=GET,POST,PUT,DELETE,PATCH
-            filters:
-              - StripPrefix=1
+
 
 logging:
   level:
