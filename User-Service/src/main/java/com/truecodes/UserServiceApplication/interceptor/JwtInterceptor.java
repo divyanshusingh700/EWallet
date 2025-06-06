@@ -31,7 +31,7 @@ public class JwtInterceptor implements HandlerInterceptor {
             return true;
         }
 
-        if (path.startsWith("/user")) {
+        if (path.startsWith("/user") || path.startsWith("/wallet")) {
             String authHeader = request.getHeader("Authorization");
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
