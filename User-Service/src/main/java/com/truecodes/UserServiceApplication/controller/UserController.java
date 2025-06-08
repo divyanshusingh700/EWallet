@@ -64,6 +64,19 @@ public class UserController {
         }
         return new ResponseEntity(user, HttpStatus.BAD_REQUEST);
     }
+
+    @PostMapping("/register")
+    private ResponseEntity<Users> register(@RequestBody @Valid UserRequestDTO dto) throws JsonProcessingException {
+        Users user = userService.addUpdate(dto);
+        logger.info("we came here in add update controller after service class method");
+        if(user != null){
+            logger.info("user != null");
+
+            return new ResponseEntity(user, HttpStatus.OK);
+        }
+        return new ResponseEntity(user, HttpStatus.BAD_REQUEST);
+    }
+
     @GetMapping("/userDetails")
     public Users getUserDetails(@RequestParam("contact") String contact){
         System.out.println("came in userDetails");
