@@ -3,9 +3,11 @@ package com.truecodes.UserServiceApplication.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.truecodes.UserServiceApplication.dtos.UserRequestDTO;
+import com.truecodes.UserServiceApplication.exceptionHandler.ClientSideAPIRequestException;
 import com.truecodes.UserServiceApplication.model.Users;
 import com.truecodes.UserServiceApplication.repository.UserRepository;
 import com.truecodes.utilities.CommonConstants;
+import com.truecodes.utilities.UserIdentifier;
 import com.truecodes.utilities.dto.UserDTO;
 import jakarta.validation.Valid;
 import org.json.simple.JSONObject;
@@ -13,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -46,15 +49,37 @@ public class UserService implements UserDetailsService {
         Users user = dto.toUser();
         user.setAuthorities(userAuthority);
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        String contact = user.getContact();
+        String idVal = user.getUserIdentifierValue();
+        UserIdentifier identifier = user.getIdentifier();
+        String email = user.getEmail();
+        if (isContactExists(contact)) {
+            throw new ClientSideAPIRequestException("Contact already exists", HttpStatus.BAD_REQUEST);
+        }
+        if (isIdExists(idVal)) {
+            throw new ClientSideAPIRequestException("User Identifier Value should be unique", HttpStatus.BAD_REQUEST);
+        }
+        if (isEmailExists(email)) {
+            throw new ClientSideAPIRequestException("Email should be unique", HttpStatus.BAD_REQUEST);
+        }
 
+        if(identifier == UserIdentifier.AADHAAR_CARD) {
+            if(idVal.length()!=12){
+                throw new ClientSideAPIRequestException("User Identifier value should be of length 12", HttpStatus.BAD_REQUEST);
+            }
+        }else{
+            if(idVal.length()!=11){
+                throw new ClientSideAPIRequestException("User Identifier value should be of length 11", HttpStatus.BAD_REQUEST);
+            }
+        }
         // Wallet service , send  mail to that user has not been crated
         // kafka
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put(CommonConstants.USER_CONTACT,user.getContact());
-        jsonObject.put(CommonConstants.USER_EMAIL,user.getEmail());
+        jsonObject.put(CommonConstants.USER_CONTACT,contact);
+        jsonObject.put(CommonConstants.USER_EMAIL,email);
         jsonObject.put(CommonConstants.USER_NAME,user.getName());
-        jsonObject.put(CommonConstants.USER_IDENTIFIER,user.getIdentifier());
-        jsonObject.put(CommonConstants.USER_IDENTIFIER_VALUE,user.getUserIdentifierValue());
+        jsonObject.put(CommonConstants.USER_IDENTIFIER,identifier);
+        jsonObject.put(CommonConstants.USER_IDENTIFIER_VALUE,idVal);
         jsonObject.put(CommonConstants.USER_ID,user.getUserId());
 
         logger.info("json object as to string"+jsonObject);
@@ -81,6 +106,17 @@ public class UserService implements UserDetailsService {
                 .name(user.getName())
                 .email(user.getEmail())
                 .build();
+    }
+
+    public boolean isContactExists(String contact) {
+        return userRepository.existsByContact(contact);
+    }
+    public boolean isIdExists(String idVal) {
+        return userRepository.existsByUserIdentifierValue(idVal);
+    }
+
+    public boolean isEmailExists(String email) {
+        return userRepository.existsByEmail(email);
     }
 
 }
