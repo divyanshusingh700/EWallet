@@ -26,6 +26,7 @@ public class OtpEntry {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private LocalDateTime expiresAt;
+    private int expiryTime;
 
     private boolean expired;
 
