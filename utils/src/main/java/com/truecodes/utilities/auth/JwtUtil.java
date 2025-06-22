@@ -11,15 +11,28 @@ import org.springframework.stereotype.Service;
 
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
+import java.util.*;
+import java.util.function.Function;
+
+import io.jsonwebtoken.*;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+import org.springframework.stereotype.Component;
+
+import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
 @Component
 public class JwtUtil {
 
-    private String SECRET_KEY = "secretKey123secretKey123secretKey123";
+    private static final String SECRET_KEY = "secretKey123secretKey123secretKey123";
+
+    private Key getSigningKey() {
+        return Keys.hmacShaKeyFor(SECRET_KEY.getBytes(StandardCharsets.UTF_8));
+    }
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -35,25 +48,46 @@ public class JwtUtil {
     }
 
     private Claims extractAllClaims(String token) {
-        return Jwts.parser().setSigningKey(SECRET_KEY.getBytes()).parseClaimsJws(token).getBody();
+        return Jwts.parserBuilder()
+                .setSigningKey(getSigningKey())
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
     }
 
     public Boolean isTokenExpired(String token) {
         return extractExpiration(token).before(new Date());
     }
 
-    public String generateToken(String username) {
-        return createToken(new HashMap<>(), username);
+    public String generateToken(String username, String password, String requestId, long expiryMillis, String type) {
+        Map<String, Object> claims = Map.of(
+                "username", username,
+                "password", password,
+                "requestId", requestId
+        );
+
+        return createToken(claims, username, expiryMillis, type);
     }
 
-    private String createToken(Map<String, Object> claims, String subject) {
-        return Jwts.builder()
-                .setClaims(claims)
-                .setSubject(subject)
-                .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10))
-                .signWith(SignatureAlgorithm.HS256, SECRET_KEY.getBytes(StandardCharsets.UTF_8))
-                .compact();
+    private String createToken(Map<String, Object> claims, String subject, long expiryMillis, String type) {
+        if(Objects.equals(type, "refresh")){
+            return Jwts.builder()
+                    .setClaims(claims)
+                    .setSubject(subject)
+                    .setIssuedAt(new Date(System.currentTimeMillis() + 10 * 60 * 1000))
+                    .setExpiration(new Date(System.currentTimeMillis() + 2*expiryMillis))
+                    .signWith(getSigningKey(), SignatureAlgorithm.HS256)
+                    .compact();
+        }else{
+            return Jwts.builder()
+                    .setClaims(claims)
+                    .setSubject(subject)
+                    .setIssuedAt(new Date())
+                    .setExpiration(new Date(System.currentTimeMillis() + expiryMillis))
+                    .signWith(getSigningKey(), SignatureAlgorithm.HS256)
+                    .compact();
+        }
+
     }
 
     public Boolean validateToken(String token, String username) {

@@ -52,6 +52,7 @@ public class JwtInterceptor implements HandlerInterceptor {
                         .getBody();
                 request.setAttribute("claims", claims);
             } catch (Exception e) {
+                e.printStackTrace();
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                 response.getWriter().write("Unauthorized: Invalid or expired token");
                 return false;

@@ -1,6 +1,8 @@
 package com.truecodes.UserServiceApplication.service;
 
+import com.truecodes.UserServiceApplication.model.LoginEntry;
 import com.truecodes.UserServiceApplication.model.OtpEntry;
+import com.truecodes.UserServiceApplication.repository.LoginTokenRepository;
 import com.truecodes.UserServiceApplication.repository.OtpEntryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,8 +18,22 @@ import java.util.UUID;
 public class RegistrationService {
 
     @Autowired
+    private LoginTokenRepository loginTokenRepository;
+    @Autowired
     private OtpEntryRepository otpEntryRepository;
 
+    public void updateToken(String email, String otpCheckToken, String refreshOtpCheckToken) {
+        LocalDateTime now = LocalDateTime.now();
+
+        LoginEntry loginEntry = new LoginEntry();
+        loginEntry.setEmail(email);
+        loginEntry.setCreatedAt(now);
+        loginEntry.setUpdatedAt(now);
+        loginEntry.setOtpCheckToken(otpCheckToken);
+        loginEntry.setRefreshOtpCheckToken(refreshOtpCheckToken);
+
+        loginTokenRepository.save(loginEntry);
+    }
     public void processOtpRequest(String email, String clientIp, OtpEntry.ActionType actionType) {
         String otp = String.format("%06d", new Random().nextInt(999999));
         LocalDateTime now = LocalDateTime.now();

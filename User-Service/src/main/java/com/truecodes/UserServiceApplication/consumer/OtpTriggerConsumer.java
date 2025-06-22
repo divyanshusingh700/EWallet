@@ -14,8 +14,19 @@ public class OtpTriggerConsumer {
     private RegistrationService otpService;
 
     @KafkaListener(topics = "otp-registration", groupId = "otp-group")
-    public void consume(String email) {
-        String clientIp = InetAddress.getLoopbackAddress().getHostAddress(); // Ideally passed in message or context
+    public void consumeRegistrationOtp(String email) {
+        String clientIp = InetAddress.getLoopbackAddress().getHostAddress();
         otpService.processOtpRequest(email, clientIp, OtpEntry.ActionType.REGISTRATION);
+    }
+
+    @KafkaListener(topics = "otp-login", groupId = "otp-group")
+    public void consumeLoginOtp(String email) {
+        String clientIp = InetAddress.getLoopbackAddress().getHostAddress();
+        otpService.processOtpRequest(email, clientIp, OtpEntry.ActionType.LOGIN);
+    }
+
+    @KafkaListener(topics = "login-data", groupId = "otp-group")
+    public void saveCheckToken(String email, String otpCheckToken, String refreshOtpCheckToken) {
+        otpService.updateToken(email, otpCheckToken, refreshOtpCheckToken);
     }
 }

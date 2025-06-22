@@ -9,7 +9,11 @@ public class AuthService {
     @Autowired
     private JwtUtil jwtUtil;
 
-    public String generateToken(String username) {
-        return jwtUtil.generateToken(username);
+//    public String generateToken(String username) {
+//        return jwtUtil.generateToken(username);
+//    }
+
+    public String generateLoginToken(String username, String password, String checkToken, int expiresIn, String type) {
+        return jwtUtil.generateToken(username, password, checkToken ,expiresIn, type);
     }
 }
