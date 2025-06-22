@@ -29,7 +29,7 @@ public class RegistrationController {
 
     @PostMapping("/initiate")
     public ResponseEntity<OTPResponse> initiateRegistration(@RequestBody @Valid RegistrationInitiateRequest request, HttpServletRequest servletRequest) {
-        kafkaTemplate.send("otp-registration", request.getEmail());
+        kafkaTemplate.send("otp-registration", request.getUsername());
         return ResponseEntity.ok(new OTPResponse("Request OTP by EMAIL initiated!"));
     }
 
@@ -45,14 +45,11 @@ public class RegistrationController {
 
     @PostMapping("/confirm")
     public ResponseEntity<RegistrationConfirmResponse> confirmRegistration(@RequestBody ConfirmRegistrationRequest request) {
-        if (request.getEmail() == null || request.getPassword() == null) {
+        if (request.getUsername() == null || request.getPassword() == null) {
             return ResponseEntity.badRequest().build();
         }
 
-        // TODO: Validations for password strength
-
         String otpCheckToken = UUID.randomUUID().toString();
-
         return ResponseEntity.ok(new RegistrationConfirmResponse(otpCheckToken));
     }
 }

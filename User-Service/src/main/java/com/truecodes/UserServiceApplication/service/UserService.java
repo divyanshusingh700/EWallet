@@ -43,9 +43,10 @@ public class UserService implements UserDetailsService {
     @Autowired
     private ObjectMapper objectMapper;
 
-    public Users addUpdate(@Valid UserRequestDTO dto) throws JsonProcessingException {
+    public Users addKYCDetails(@Valid UserRequestDTO dto) throws JsonProcessingException {
         // check if user is present in db
         logger.info("we came here in add update service class method");
+        // need to extract the email and password from
         Users user = dto.toUser();
         user.setAuthorities(userAuthority);
         user.setPassword(passwordEncoder.encode(dto.getPassword()));

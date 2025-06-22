@@ -6,10 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/OtpRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/OtpRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/OtpEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/OtpEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/consumer/OtpTriggerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/consumer/OtpTriggerConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/RegistrationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/interceptor/JwtInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/exceptionHandler/ControllerExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/exceptionHandler/ControllerExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/auth/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/interceptor/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/truecodes/utilities/interceptor/JwtInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/classes/com/truecodes/utilities/auth/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/target/classes/com/truecodes/utilities/auth/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/classes/com/truecodes/utilities/interceptor/JwtInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/target/classes/com/truecodes/utilities/interceptor/JwtInterceptor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +31,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -64,7 +75,7 @@
     "Application.JwtKeyGenerator.executor": "Run",
     "Application.NotificationServiceApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Debug",
-    "Application.WalletServiceApplication.executor": "Debug",
+    "Application.WalletServiceApplication.executor": "Run",
     "Application.com.truecodes.NotificationServiceApplication.NotificationServiceApplication.executor": "Debug",
     "Application.org.gfg.NotificationServiceApplication.NotificationServiceApplication.executor": "Run",
     "Application.org.gfg.WalletServiceApplication.WalletServiceApplication.executor": "Run",
@@ -74,7 +85,7 @@
     "Maven.EWallet [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Registration",
+    "git-widget-placeholder": "minori",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet/User-Service/src/main/java/com/truecodes/UserServiceApplication",
     "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
@@ -277,6 +288,31 @@
           <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
           <line>73</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/consumer/OtpTriggerConsumer.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>

@@ -12,10 +12,10 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ConfirmRegistrationRequest {
+public class AuthOtpRequestDTO {
     @Email
     @NotBlank(message = "Email is mandatory")
-    private String username;
+    private String login;
     @NotNull
-    private Integer password;
+    private String otpCheckToken;
 }
