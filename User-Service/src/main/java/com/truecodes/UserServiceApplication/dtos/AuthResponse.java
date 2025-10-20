@@ -14,4 +14,15 @@ public class AuthResponse {
     private String tokenType;
     private String accessToken;
     private String refreshToken;
+    private String error;
+    public AuthResponse(String error){
+        this.error = error;
+    }
+
+    public AuthResponse(int expiresIn, String bearer, String accessToken, String refreshToken) {
+        this.expiresIn = expiresIn;
+        this.tokenType = bearer;
+        this.accessToken = accessToken;
+        this.refreshToken = refreshToken;
+    }
 }

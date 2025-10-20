@@ -1,0 +1,5 @@
+ Wallet-Service/target/
+ User-Service/target/
+ .DS_Store
+ .idea/workspace.xml
+ Wallet-Service/Wallet-Service.iml
