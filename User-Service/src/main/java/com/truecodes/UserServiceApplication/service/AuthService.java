@@ -24,13 +24,24 @@ public class AuthService {
 //    }
 
     public boolean validateUser(String username, String password){
-        Optional<Users> optionalUser = userRepository.findByEmail(username);
-        if(optionalUser.isEmpty()){
+        Optional<Users> optionalUserEmail = userRepository.findByEmail(username);
+        Users optionalUserContact = userRepository.findByContact(username);
+        Users user = null;
+
+        if(!optionalUserEmail.isEmpty()) {
+             user = optionalUserEmail.get();
+        }
+        else if(optionalUserContact!=null){
+             user = optionalUserContact;
+        }else{
             throw new RuntimeException("User Not Found");
         }
-        Users user = optionalUser.get();
-        return bCryptPasswordEncoder.matches(password, user.getPassword());
-
+        String userPassword=user.getPassword();
+        if(userPassword == null || userPassword.isEmpty()){
+            throw new RuntimeException("user password is not set !");
+        }
+        System.out.println("password: "+password+" , userPassword: "+userPassword);
+        return bCryptPasswordEncoder.matches(password, userPassword);
     }
 
     public String generateLoginToken(String username, String password, String checkToken, int expiresIn, String type) {

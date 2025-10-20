@@ -23,6 +23,8 @@ public class OtpEntry {
     private String email;
     private String otp;
 
+    private String contact;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private LocalDateTime expiresAt;

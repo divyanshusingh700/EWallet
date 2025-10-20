@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface OtpEntryRepository extends JpaRepository<OtpEntry, Long> {
-    Optional<OtpEntry> findTopByEmailAndActionTypeOrderByCreatedAtDesc(String email, OtpEntry.ActionType actionType);
+    Optional<OtpEntry> findTopByContactAndActionTypeOrderByCreatedAtDesc(String contact, OtpEntry.ActionType actionType);
 }

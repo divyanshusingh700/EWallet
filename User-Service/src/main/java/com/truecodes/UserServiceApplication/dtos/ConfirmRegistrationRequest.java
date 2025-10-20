@@ -13,9 +13,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ConfirmRegistrationRequest {
-    @Email
-    @NotBlank(message = "Email is mandatory")
+    @NotBlank(message = "Contact is mandatory")
     private String username;
     @NotNull
-    private Integer password;
+    private String password;
 }

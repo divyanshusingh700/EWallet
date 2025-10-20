@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.truecodes.UserServiceApplication.dtos.UserRequestDTO;
 import com.truecodes.UserServiceApplication.exceptionHandler.ClientSideAPIRequestException;
+import com.truecodes.UserServiceApplication.model.UserType;
 import com.truecodes.UserServiceApplication.model.Users;
 import com.truecodes.UserServiceApplication.repository.UserRepository;
 import com.truecodes.utilities.CommonConstants;
@@ -46,17 +47,19 @@ public class UserService implements UserDetailsService {
     public Users addKYCDetails(@Valid UserRequestDTO dto) throws JsonProcessingException {
         // check if user is present in db
         logger.info("we came here in add update service class method");
-        // need to extract the email and password from
         Users user = dto.toUser();
-        user.setAuthorities(userAuthority);
-        user.setPassword(passwordEncoder.encode(dto.getPassword()));
-        String contact = user.getContact();
+        Users existingUser = userRepository.findByContact(user.getContact());
+        // need to extract the email and password from
+
+        existingUser.setAuthorities(userAuthority);
         String idVal = user.getUserIdentifierValue();
         UserIdentifier identifier = user.getIdentifier();
         String email = user.getEmail();
-        if (isContactExists(contact)) {
-            throw new ClientSideAPIRequestException("Contact already exists", HttpStatus.BAD_REQUEST);
-        }
+        existingUser.setPassword(passwordEncoder.encode(dto.getPassword()));
+
+//        if (isContactExists(contact)) {
+//            throw new ClientSideAPIRequestException("Contact already exists", HttpStatus.BAD_REQUEST);
+//        }
         if (isIdExists(idVal)) {
             throw new ClientSideAPIRequestException("User Identifier Value should be unique", HttpStatus.BAD_REQUEST);
         }
@@ -73,22 +76,30 @@ public class UserService implements UserDetailsService {
                 throw new ClientSideAPIRequestException("User Identifier value should be of length 11", HttpStatus.BAD_REQUEST);
             }
         }
+
+        existingUser.setEmail(user.getEmail());
+        existingUser.setAddress(user.getAddress());
+        existingUser.setDob(user.getDob());
+        existingUser.setName(user.getName());
+        existingUser.setIdentifier(user.getIdentifier());
+        existingUser.setUserIdentifierValue(user.getUserIdentifierValue());
+        existingUser.setUserId(user.getUserId());
+        existingUser.setUserType(UserType.USER);
         // Wallet service , send  mail to that user has not been crated
         // kafka
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put(CommonConstants.USER_CONTACT,contact);
+        jsonObject.put(CommonConstants.USER_CONTACT,existingUser.getContact());
         jsonObject.put(CommonConstants.USER_EMAIL,email);
         jsonObject.put(CommonConstants.USER_NAME,user.getName());
         jsonObject.put(CommonConstants.USER_IDENTIFIER,identifier);
         jsonObject.put(CommonConstants.USER_IDENTIFIER_VALUE,idVal);
         jsonObject.put(CommonConstants.USER_ID,user.getUserId());
 
-        logger.info("json object as to string"+jsonObject);
-        logger.info("json object as to string by objectMapper.writeValueAsString(jsonObject)"+objectMapper.writeValueAsString(jsonObject));
+//        logger.info("json object as to string by objectMapper.writeValueAsString(jsonObject)"+objectMapper.writeValueAsString(jsonObject));
 
-        user = userRepository.save(user);
+        existingUser = userRepository.save(existingUser);
         kafkaTemplate.send(CommonConstants.USER_CREATED_TOPIC,objectMapper.writeValueAsString(jsonObject));
-        return user;
+        return existingUser;
     }
 
     @Override

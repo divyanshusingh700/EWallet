@@ -12,7 +12,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RegistrationInitiateRequest {
-    @Email
     @NotBlank
     private String username;
 

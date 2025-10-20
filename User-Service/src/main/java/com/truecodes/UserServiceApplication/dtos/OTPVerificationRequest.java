@@ -12,9 +12,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OTPVerificationRequest {
-    @Email
     @NotBlank
-    private String email;
+    private String contact;
 
     @NotBlank
     private String otp;

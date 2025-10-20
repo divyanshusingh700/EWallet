@@ -31,12 +31,12 @@ public class Users implements UserDetails {
     @Column(unique = true, nullable = false)
     private String contact;
 
-    @Column(name = "user_id", nullable = false, unique = true)
+    @Column(name = "user_id", nullable = true, unique = true)
     private String userId;
 
     private UserType userType;
 
-    @Column(unique = true,nullable = false)
+    @Column(unique = true, nullable = true)
     private String email;
 
     private String authorities;
@@ -66,8 +66,12 @@ public class Users implements UserDetails {
     @Enumerated
     private UserIdentifier identifier;
 
-    @Column(name = "user_identifier_value", unique = true,nullable = false)
+    @Column(name = "user_identifier_value", unique = true)
     private String userIdentifierValue;
+
+    public Users(String contact) {
+        this.contact = contact;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

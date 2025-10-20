@@ -6,93 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="bb2ce0fe-1bfc-4845-a8c7-3dcf463ec13f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/AuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/OtpEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/OtpEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/repository/OtpEntryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/repository/OtpEntryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/UserServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/configuration/CommonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/configuration/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/configuration/WebMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/consumer/OtpTriggerConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/RegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthOtpConfirmDTO$AuthOtpConfirmDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthOtpConfirmDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthOtpRequestDTO$AuthOtpRequestDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthOtpRequestDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthRequest$AuthRequestBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthResponse$AuthResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/AuthResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest$ConfirmRegistrationRequestBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPResponse$OTPResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest$OTPVerificationRequestBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OtpRequestDTO$OtpRequestDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OtpRequestDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/RegistrationConfirmResponse$RegistrationConfirmResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/RegistrationConfirmResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest$RegistrationInitiateRequestBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO$UserRequestDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/UserRequestDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/exceptionHandler/ClientSideAPIRequestException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/exceptionHandler/ControllerExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/AuthenticateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/AuthenticateResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/LoginEntry$LoginEntryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/LoginEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry$ActionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry$OtpEntryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users$UsersBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/repository/LoginTokenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/repository/OtpEntryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/AuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/RegistrationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/utils/StrictStringDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/Wallet-Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet-Service/Wallet-Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/WalletServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/config/CommonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/config/KafkaConsumerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/config/KafkaProducerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/config/WebMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/consumer/TxnInitiatedConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/consumer/UserCreatedConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/controller/WalletController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/dtos/TransferRequestDto$TransferRequestDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/dtos/TransferRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/exceptionHandler/ClientSideAPIRequestException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/exceptionHandler/ControllerExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/CurrencyType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/TransactionHistory$TransactionHistoryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/TransactionHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/TransferResponseDTO$TransferResponseDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/TransferResponseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/Wallet$WalletBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/Wallet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/WalletDetailsRespDTO$WalletDetailsRespDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/model/WalletDetailsRespDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/repository/TxnHistoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/repository/WalletRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/service/UserClientService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/service/WalletService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/classes/com/truecodes/WalletServiceApplication/utils/CurrencyTypeConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet-Service/target/test-classes/org/gfg/JBDL_70_EWALLET/Jbdl70EwalletApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/RegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest$ConfirmRegistrationRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest$ConfirmRegistrationRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/ConfirmRegistrationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest$OTPVerificationRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest$OTPVerificationRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/OTPVerificationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/dtos/RegistrationInitiateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry$ActionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry$ActionType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry$OtpEntryBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry$OtpEntryBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/OtpEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/model/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/repository/OtpEntryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/repository/OtpEntryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/RegistrationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/RegistrationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/target/classes/com/truecodes/UserServiceApplication/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +95,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "regNew",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/testvagranttechnologies/Documents/MicroserviceOpenSource/EWallet",
     "onboarding.tips.debug.path": "/Users/testvagrant/Documents/IntelliJ Projects/EWallet/utils/src/main/java/com/truecodes/Main.java",
@@ -363,14 +300,19 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/consumer/OtpTriggerConsumer.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/controller/UserController.java</url>
           <line>57</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/RegistrationService.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/User-Service/src/main/java/com/truecodes/UserServiceApplication/service/AuthService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java/com/truecodes/gateway/JwtAuthenticationFilter.java</url>
