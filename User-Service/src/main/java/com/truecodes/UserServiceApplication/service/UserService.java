@@ -5,8 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.truecodes.UserServiceApplication.dtos.UserRequestDTO;
 import com.truecodes.UserServiceApplication.model.Users;
 import com.truecodes.UserServiceApplication.repository.UserRepository;
-import com.truecodes.utilities.CommonConstants;
-import com.truecodes.utilities.dto.UserDTO;
+import com.truecodes.utils.CommonConstants;
+import com.truecodes.utils.dto.UserDTO;
 import jakarta.validation.Valid;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
@@ -72,7 +72,7 @@ public class UserService implements UserDetailsService {
         return users;
     }
 
-    public UserDTO findUserById(String userId) {
+    public com.truecodes.utils.dto.UserDTO findUserById(String userId) {
         Users user = userRepository.findByUserId(userId)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 

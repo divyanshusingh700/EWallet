@@ -1,0 +1,5 @@
+com\truecodes\gateway\SecurityConfig.class
+com\truecodes\gateway\GatewayApplication.class
+com\truecodes\gateway\JwtAuthenticationFilter.class
+com\truecodes\gateway\GatewayController.class
+com\truecodes\gateway\JwtAuthenticationFilter$1.class

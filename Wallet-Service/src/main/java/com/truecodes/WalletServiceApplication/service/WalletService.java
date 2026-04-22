@@ -4,7 +4,7 @@ import com.truecodes.WalletServiceApplication.exceptionHandler.ClientSideAPIRequ
 import com.truecodes.WalletServiceApplication.model.*;
 import com.truecodes.WalletServiceApplication.repository.TxnHistoryRepository;
 import com.truecodes.WalletServiceApplication.repository.WalletRepository;
-import com.truecodes.utilities.dto.UserDTO;
+import com.truecodes.utils.dto.UserDTO;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

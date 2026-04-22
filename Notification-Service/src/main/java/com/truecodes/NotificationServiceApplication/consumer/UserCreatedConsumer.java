@@ -2,7 +2,7 @@ package com.truecodes.NotificationServiceApplication.consumer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.truecodes.utilities.CommonConstants;
+import com.truecodes.utils.CommonConstants;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

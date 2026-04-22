@@ -57,7 +57,7 @@ public class SecurityConfig {
 //                .csrf(csrf -> csrf.disable())
 //                .authorizeHttpRequests(authorize -> authorize
 ////                                .requestMatchers("/user/userDetails/**").hasAnyAuthority(serviceAuthority, adminAuthority)
-//                                .requestMatchers("/auth/**", "/user/login", "/user/verify-otp").permitAll()
+//                                .requestMatchers("/com.truecodes.utils.auth/**", "/user/login", "/user/verify-otp").permitAll()
 ////                                .requestMatchers("/user/filter/**").hasAnyAuthority(adminAuthority, studentAuthority)
 ////                        .requestMatchers("/txn/create/**").hasAuthority(adminAuthority)
 ////                        .requestMatchers("/txn/return/**").hasAuthority(adminAuthority)

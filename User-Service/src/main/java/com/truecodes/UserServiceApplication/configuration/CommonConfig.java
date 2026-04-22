@@ -1,7 +1,7 @@
 package com.truecodes.UserServiceApplication.configuration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.truecodes.utilities.auth.JwtUtil;
+import com.truecodes.utils.auth.JwtUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

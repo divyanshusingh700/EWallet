@@ -3,7 +3,7 @@ package com.truecodes.UserServiceApplication.dtos;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.truecodes.UserServiceApplication.utils.StrictStringDeserializer;
-import com.truecodes.utilities.UserIdentifier;
+import com.truecodes.utils.UserIdentifier;
 import com.truecodes.UserServiceApplication.model.UserType;
 import com.truecodes.UserServiceApplication.model.Users;
 import jakarta.validation.constraints.NotBlank;

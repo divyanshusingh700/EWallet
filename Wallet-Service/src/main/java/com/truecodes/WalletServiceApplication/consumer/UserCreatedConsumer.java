@@ -3,7 +3,7 @@ package com.truecodes.WalletServiceApplication.consumer;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.truecodes.WalletServiceApplication.model.CurrencyType;
-import com.truecodes.utilities.CommonConstants;
+import com.truecodes.utils.CommonConstants;
 import com.truecodes.WalletServiceApplication.model.Wallet;
 import com.truecodes.WalletServiceApplication.repository.WalletRepository;
 import org.json.simple.JSONObject;

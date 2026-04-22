@@ -1,2 +1,8 @@
-com/truecodes/utilities/CommonConstants.class
-com/truecodes/utilities/UserIdentifier.class
+com\truecodes\utils\UserIdentifier.class
+com\truecodes\utils\auth\JwtConstants.class
+com\truecodes\utils\auth\JwtExceptionHandler.class
+com\truecodes\utils\dto\UserDTO$UserDTOBuilder.class
+com\truecodes\utils\auth\JwtUtil.class
+com\truecodes\utils\dto\UserDTO.class
+com\truecodes\utils\CommonConstants.class
+com\truecodes\utils\auth\JwtKeyGenerator.class
