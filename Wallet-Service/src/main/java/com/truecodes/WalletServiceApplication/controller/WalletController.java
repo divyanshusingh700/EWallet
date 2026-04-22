@@ -24,14 +24,17 @@ public class WalletController {
     private static Logger logger = LoggerFactory.getLogger(WalletController.class);
 
     @PostMapping("/transfer")
-    public ResponseEntity<TransferResponseDTO> transferAmount(@Valid @RequestBody TransferRequestDto transferRequestDto) {
-        TransferResponseDTO result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount(), CurrencyType.INR);
+    public ResponseEntity<TransferResponseDTO> transferAmount( @RequestHeader("Authorization") String authHeader, @Valid @RequestBody TransferRequestDto transferRequestDto) {
+        String token = authHeader.startsWith("Bearer ") ? authHeader.substring(7) : authHeader;
+
+        TransferResponseDTO result = walletService.transferAmount(transferRequestDto.getSenderContact(), transferRequestDto.getReceiverContact(), transferRequestDto.getAmount(), token, CurrencyType.INR);
         return ResponseEntity.ok(result);
     }
     @GetMapping("/view")
-    public ResponseEntity<WalletDetailsRespDTO> viewWalletDetails(@Valid @RequestBody Map<String, String> request) {
+    public ResponseEntity<WalletDetailsRespDTO> viewWalletDetails(@RequestHeader("Authorization") String authHeader,@Valid @RequestBody Map<String, String> request) {
         logger.info("are we getting here");
-        WalletDetailsRespDTO result = walletService.viewWalletDetails(request.get("contact"), CurrencyType.valueOf(request.get("currency")));
+        String token = authHeader.startsWith("Bearer ") ? authHeader.substring(7) : authHeader;
+        WalletDetailsRespDTO result = walletService.viewWalletDetails(request.get("contact"), CurrencyType.valueOf(request.get("currency")), token);
         return ResponseEntity.ok(result);
     }
 }

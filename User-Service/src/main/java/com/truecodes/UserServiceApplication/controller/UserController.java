@@ -35,27 +35,27 @@ public class UserController {
 
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    @PostMapping("/login")
-    public ResponseEntity<?> createAuthToken(@RequestBody AuthenticateRequest authRequest) throws Exception {
-        try {
-            authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(
-                            authRequest.getContact(), authRequest.getPassword()
-                    )
-            );
-        } catch (BadCredentialsException e) {
-            throw new Exception("Incorrect username or password", e);
-        }
+//    @PostMapping("/login")
+//    public ResponseEntity<?> createAuthToken(@RequestBody AuthenticateRequest authRequest) throws Exception {
+//        try {
+//            authenticationManager.authenticate(
+//                    new UsernamePasswordAuthenticationToken(
+//                            authRequest.getContact(), authRequest.getPassword()
+//                    )
+//            );
+//        } catch (BadCredentialsException e) {
+//            throw new Exception("Incorrect username or password", e);
+//        }
+//
+//        final UserDetails userDetails = userService.loadUserByUsername(authRequest.getContact());
+//        final String jwt = jwtUtil.generateToken(userDetails.getUsername());
+//
+//        return ResponseEntity.ok(new AuthenticateResponse(jwt));
+//    }
 
-        final UserDetails userDetails = userService.loadUserByUsername(authRequest.getContact());
-        final String jwt = jwtUtil.generateToken(userDetails.getUsername());
-
-        return ResponseEntity.ok(new AuthenticateResponse(jwt));
-    }
-
-    @PostMapping("/addUpdate")
-    private ResponseEntity<Users> addUpdate(@RequestBody @Valid UserRequestDTO dto) throws JsonProcessingException {
-        Users user = userService.addUpdate(dto);
+    @PostMapping("/add-kyc")
+    private ResponseEntity<Users> addKYCDetails(@RequestBody @Valid UserRequestDTO dto) throws JsonProcessingException {
+        Users user = userService.addKYCDetails(dto);
         logger.info("we came here in add update controller after service class method");
         if(user != null){
             logger.info("user != null");
@@ -64,6 +64,19 @@ public class UserController {
         }
         return new ResponseEntity(user, HttpStatus.BAD_REQUEST);
     }
+
+    @PostMapping("/register")
+    private ResponseEntity<Users> register(@RequestBody @Valid UserRequestDTO dto) throws JsonProcessingException {
+        Users user = userService.addKYCDetails(dto);
+        logger.info("we came here in add update controller after service class method");
+        if(user != null){
+            logger.info("user != null");
+
+            return new ResponseEntity(user, HttpStatus.OK);
+        }
+        return new ResponseEntity(user, HttpStatus.BAD_REQUEST);
+    }
+
     @GetMapping("/userDetails")
     public Users getUserDetails(@RequestParam("contact") String contact){
         System.out.println("came in userDetails");
@@ -76,5 +89,4 @@ public class UserController {
         UserDTO user = userService.findUserById(userId);
         return ResponseEntity.ok(user);
     }
-
 }
